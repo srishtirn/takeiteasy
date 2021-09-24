@@ -1,0 +1,280 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*
+{
+  margin: 0;
+  padding:0;
+  box-sizing : border-box;
+  font-family: 'Poppins', sans-serif;
+}
+header{
+  width: 100%;
+  height: 50px;
+  background: #F8F8F8;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo{
+  color: rgb(44,44,44);
+  font-size: 1.5em;
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+}
+.nav ol{
+  display: flex;
+  list-style: none;
+}
+
+.btn{
+  position: relative;
+  width: 25px;
+  height: 25px;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor:pointer;
+  display: none;
+}
+
+btn::before{
+  content:'\f0c9';
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: 'font awesome 5 free';
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.nav ol li{ margin: 1em;}
+.nav ol li a{
+  text-decoration: none;
+  padding: 0.2em 1.2em 0.9em 1.2em;
+  border-radius: 10px 10px 0 0;
+  color: rgb(39,39,39);
+  transition: all, 2s;
+  position: relative;
+  z-index: 1;
+}
+
+.nav ol li a::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 41px;
+  border-radius: 10px 10px 0 0;
+  background: #853333;
+  transform-origin: bottom;
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  transform: scaleY(0.05);
+  z-index: -1;
+  transition: all, 2s;
+}
+.nav ol li a:hover::before{transform:scaleY(1.1);}
+.nav ol li a:hover{color:white;}
+
+
+/*QUIZ BUTTON*/
+button{
+  width:150px;
+  height: 50px;
+  background: none;
+  border: 4px solid #ff304f;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 100ms;
+}
+
+span,
+svg{
+  position: absolute;
+  color: #002651;
+  fill: transperant;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+button:focus{
+  outline: none;
+  border: 2px solid #1e2a78;
+  width: 50px;
+  border-left: 4px solid #1e2a78;
+  border-bottom: 4px solid #1e2a78;
+  animation: spin 2s 500ms forwards;
+}
+
+button:focus span{
+  color: transperant;
+}
+
+button:focus svg{
+  animation: check 500ms 2300ms forwards;
+}
+
+@keyframes spin{
+  80%{
+    border: 4px solid transparent;
+    border-left: 4px solid #303a52;
+  }
+  100%{
+    transform: rotate(1080deg);
+    border: 4px solid #303a52;
+  }
+}
+
+@keyframes check{
+  to{
+    fill: #303a52;
+  }
+}
+
+@keyframes circle{
+  to{
+    border: 4px solid #303a52;
+  }
+}
+
+/*Login*/
+
+.container {
+  padding: 16px;
+}
+
+.login-section {
+    background: #FFFFFF;
+    height: 800px;
+}
+ 
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+li {list-style-type: none;
+font-size: 16pt;
+}
+
+/*Signup*/
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+button {
+  background-color: #033623;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+.container {
+  padding: 16px;
+}
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/*POPUP*/
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}

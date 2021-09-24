@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="our-official-logo.png" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="grequo.css" type="text/css" />
+
+    <title>GREQUO</title>
+</head>
+<body>
+    <header>
+        <p class="logo">GREQUO</p>
+             <input type="checkbox" name="" class="btn" />
+             <div class="nav">
+                 <ol>
+                     <li><a class="active" href="grequo_home.html">HOME</a></li>
+                     <li><a href="login_grequo.html">LOGIN</a></li>
+                     <li><a href="signup_grequo.html">SIGN UP</a></li>
+                     <li><a href="grequo_quiz.html">QUIZ</a></li>
+                 </ol>
+             </div>
+             </header>
+
+             <form class="modal-content" action="/action_page.php">
+                <div class="container" >
+                <div style="text-align: center;">
+                    <h1>QUIZ FORM</h1>
+                     <p>Please participate in the quiz!</p> </div>
+
+                     <hr>
+
+                     <label for="firstname"><b>Question 1</b></label>
+                     <input type="text" placeholder="Enter the answer" name="firstname" required>
+                 
+                     <label for="lastname"><b>Question 2</b></label>
+                     <input type="text" placeholder="Enter the answer" name="lastname" required>
+
+                     <label for="lastname"><b>Question 3</b></label>
+                     <input type="text" placeholder="Enter the answer" name="lastname" required>
+
+                     <label for="lastname"><b>Question 4</b></label>
+                     <input type="text" placeholder="Enter the answer" name="lastname" required>
+
+                     <label for="lastname"><b>Question 5</b></label>
+                     <input type="text" placeholder="Enter the answer" name="lastname" required>
+
+                     <label for="lastname"><b>Question 6</b></label>
+                     <input type="text" placeholder="Enter the answer" name="lastname" required>
+
+                     <button type="submit">SUBMIT</button>
+</div>
+</form>
+</body>
+</html>
+
+                 
